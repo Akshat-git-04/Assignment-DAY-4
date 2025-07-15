@@ -3,7 +3,7 @@ import { useRef, useLayoutEffect } from 'react';
 function usePrevious(value) {
   const ref = useRef();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     ref.current = value;
   }, [value]);
 
